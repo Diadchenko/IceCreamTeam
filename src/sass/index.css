@@ -1,0 +1,94 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.products-section {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-top: 80px;
+}
+
+.products-label {
+  display: block;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFA5BA;
+  margin-bottom: 15px;
+}
+
+.products-header {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.product__card {
+  padding: 160px 40px 112px 40px;
+  border-radius: 24px;
+}
+
+.ice-cream {
+  background: #FFB8CA;
+}
+
+.ice-coffee {
+  background: #F0D1A5;
+}
+
+.milkshakes {
+  background: #C2E297;
+}
+
+.product__name {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  color: #FFFFFF;
+}
+
+.product__text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  /* or 21px */
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 32px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=index.css.map */

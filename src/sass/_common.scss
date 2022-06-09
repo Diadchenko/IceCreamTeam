@@ -1,1 +1,14 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.list {
+  list-style: none;
+}

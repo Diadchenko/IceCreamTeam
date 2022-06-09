@@ -10,11 +10,56 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
+    <header class="header">
+      <div class="container container-position">
+        <div class="circle"></div>
+
+        <nav class="header__nav">
+          <a href="logo">
+            <picture>
+              <source
+                srcset="./images/hero/logo.png 1x, ./images/hero/logo-2x.png 2x"
+                media="(min-width: 320px)"
+              />
+              <img src="./images/hero/logo-2x.png" alt="logo" />
+            </picture>
+          </a>
+        </nav>
+
+        <section class="hero">
+          <div class="hero__content-top">
+            <h1 class="hero__title">
+              ice cream made with
+              <span class="hero__title-second">passion</span>
+            </h1>
+            <ul class="hero__list list">
+              <li class="hero__item">
+                <a class="hero__button hero__button-accent link" href=""
+                  >Products</a
+                >
+              </li>
+              <li class="hero__item">
+                <a class="hero__button link" href="">How it’s made?</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__content-bottom">
+            <p class="hero__content-bottom--text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+          </div>
+        </section>
+      </div>
+    </header>
+
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <!-- <include src="./partials/example.html"></include> -->
   </body>
 </html>

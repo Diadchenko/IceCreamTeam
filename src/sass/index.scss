@@ -1,6 +1,10 @@
 @import './utils/mixin';
 @import './utils/visually';
 @import './reset';
+@import './utils/normalize';
 
 @import './common';
 @import './example';
+@import './container';
+@import './header';
+@import './hero';

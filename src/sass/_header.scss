@@ -1,7 +1,6 @@
 .header {
   height: 520px;
   padding-top: 8px;
-  position: relative;
 
   background-color: #ffb8ca;
 
@@ -49,6 +48,8 @@
 
 .header__nav {
   position: relative;
+  display: flex;
+  align-items: center;
   margin-bottom: 136px;
 
   @media screen and (min-width: 768px) {
@@ -58,4 +59,48 @@
   @media screen and (min-width: 1280px) {
     margin-bottom: 60px;
   }
+}
+
+.header__btn {
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 44px;
+  border: none;
+
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: #d41443;
+  border-radius: 22px;
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 767px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: auto;
+  }
+}
+
+.header__btn::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 10px;
+  background-image: url(../images/hero/vector.svg);
+  background-size: contain;
+  background-position: center;
+  margin-left: 14px;
 }

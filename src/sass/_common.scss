@@ -2,6 +2,10 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 
+body.no-scroll {
+  overflow-y: hidden;
+}
+
 .link {
   text-decoration: none;
   color: black;

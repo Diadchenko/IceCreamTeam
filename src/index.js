@@ -2,24 +2,34 @@
   const refs = {
     openMenuBtn: document.querySelector('.menu__open'),
     closeMenuBtn: document.querySelector('.menu__close'),
-    clickBtnBuy: document.querySelector('.header__btn'),
-    clickBtnMenu: document.querySelector('.menu__btn'),
     menu: document.querySelector('.menu'),
     body: document.querySelector('body'),
-    btn: document.querySelector('.header__btn'),
   };
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
-  refs.clickBtnBuy.addEventListener('click', toggleModal);
-  refs.clickBtnMenu.addEventListener('click', toggleModal);
 
   function toggleMenu() {
     refs.menu.classList.toggle('is-open');
     refs.body.classList.toggle('no-scroll');
   }
+})();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    openHeaderBtn: document.querySelector('.header__btn'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]'),
+    body: document.querySelector('body'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openHeaderBtn.addEventListener('click', toggleModal);
+
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.btn.classList.toggle('modal-open');
+    refs.modal.classList.toggle('is-hidden');
   }
 })();

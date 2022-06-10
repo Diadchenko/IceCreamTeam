@@ -40,7 +40,7 @@
           </svg>
         </button>
 
-        <button class="menu__btn" type="button">Buy now</button>
+        <button data-modal-open class="menu__btn" type="button">Buy now</button>
         <ul class="menu__list list">
           <li class="menu__item">
             <a class="menu__link link" href="">Home</a>
@@ -70,7 +70,9 @@
             <use href="./images/hero/icons.svg#icon-burger"></use>
           </svg>
         </button>
-        <button class="header__btn" type="button">Buy now</button>
+        <button data-modal-open class="header__btn" type="button">
+          Buy now
+        </button>
       </div>
     </nav>
 
@@ -193,5 +195,14 @@
         <img src="./images/hero/d-hero-girl-2x.png" alt="girl" />
       </picture>
     </section>
+  </div>
+  <div data-modal class="backdrop">
+    <div class="modal-backdrop">
+      <button data-modal-close type="button" class="modal-btn-close">
+        <svg class="icon-close" width="20" height="20">
+          <use href="./images/hero/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>

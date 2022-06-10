@@ -23,11 +23,10 @@
 .circle {
   position: absolute;
   bottom: 75px;
-  left: 0;
+  left: 36px;
   width: 346px;
   height: 346px;
-  margin-top: 25px;
-  margin-left: 36px;
+
   background-color: #ffa5ba;
   border-radius: 50%;
 
@@ -58,6 +57,33 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 60px;
+  }
+}
+
+.main-nav {
+  margin-left: 175px;
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+}
+
+.main-nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+.main-nav__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: #ffffff;
+
+  &:focus,
+  &:hover {
+    color: #d41443;
   }
 }
 

@@ -203,6 +203,53 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <form class="form">
+        <h2 class="form__title">order form</h2>
+        <label class="label">
+          <span class="label__name"> Name</span>
+          <input
+            type="text"
+            name="user-name"
+            required=""
+            class="label__input"
+          />
+        </label>
+        <label class="label">
+          <span class="label__name">Phone</span>
+          <input type="tel" name="tel" required="" class="label__input" />
+        </label>
+        <label class="label">
+          <span class="label__name">Email</span>
+          <input type="email" name="email" required="" class="label__input" />
+        </label>
+        <label class="textarea">
+          <span class="label__name">Comments</span>
+          <textarea
+            class="textarea__input"
+            name="feedback"
+            rows="8"
+            placeholder="write the text"
+          ></textarea>
+        </label>
+        <!-- <label class="checkbox">
+          <input
+            type="checkbox"
+            name="checkbox"
+            value="checkbox"
+            class="checkbox__input visually-hidden"
+          />
+          <span class="checkbox__box">
+            <svg class="checkbox__icon" width="16" height="15">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </span>
+          <span class="checkbox__text"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="" class="checkbox__link">Условия договора </a>
+          </span>
+        </label> -->
+        <button type="submit" class="form__btn">send</button>
+      </form>
     </div>
   </div>
 </header>

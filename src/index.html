@@ -18,30 +18,6 @@
     <header class="header">
       <div class="container container-position">
         <div class="circle"></div>
-        <picture class="ice-cream__picture">
-          <source
-            srcset="
-              ./images/hero/d-hero-icecream-1x.png 1x,
-              ./images/hero/d-hero-icecream-2x.png 2x
-            "
-            media="(min-width:1280px)"
-          />
-          <source
-            srcset="
-              ./images/hero/t-hero-icecream-1x.png 1x,
-              ./images/hero/t-hero-icecream-2x.png 2x
-            "
-            media="(min-width:768px)"
-          />
-          <source
-            srcset="
-              ./images/hero/m-hero-icecream-1x.png 1x,
-              ./images/hero/m-hero-icecream-2x.png 2x
-            "
-            media="(min-width:320px)"
-          />
-          <img src="./images/hero/d-hero-icecream-2x.png" alt="ice-cream" />
-        </picture>
 
         <nav class="header__nav">
           <a href="logo">
@@ -53,6 +29,7 @@
               <img src="./images/hero/logo-2x.png" alt="logo" />
             </picture>
           </a>
+
           <div class="main-nav">
             <ul class="main-nav__list list">
               <li class="main-nav__item">
@@ -72,12 +49,6 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="menu__open">
-            <svg width="20" height="12">
-              <use href="./images/hero/icons.svg#icon-burger"></use>
-            </svg>
-          </button>
-          <button class="header__btn" type="button">Buy now</button>
 
           <div class="menu">
             <button class="menu__close" type="button">
@@ -85,29 +56,66 @@
                 <use href="./images/hero/icons.svg#icon-close"></use>
               </svg>
             </button>
+
             <button class="menu__btn" type="button">Buy now</button>
             <ul class="menu__list list">
               <li class="menu__item">
                 <a class="menu__link link" href="">Home</a>
               </li>
+
               <li class="menu__item">
                 <a class="menu__link link" href="">About us</a>
               </li>
+
               <li class="menu__item">
                 <a class="menu__link link" href="">How it’s made?</a>
               </li>
+
               <li class="menu__item">
                 <a class="menu__link link" href="">Our products</a>
               </li>
+
               <li class="menu__item">
                 <a class="menu__link link" href="">Contact</a>
               </li>
             </ul>
           </div>
+
+          <div class="main-nav__button">
+            <button type="button" class="menu__open">
+              <svg width="20" height="12">
+                <use href="./images/hero/icons.svg#icon-burger"></use>
+              </svg>
+            </button>
+            <button class="header__btn" type="button">Buy now</button>
+          </div>
         </nav>
 
         <section class="hero">
-          <!-- <div class="hero__picture-icecrem"></div> -->
+          <picture class="ice-cream__picture">
+            <source
+              srcset="
+                ./images/hero/d-hero-icecream-1x.png 1x,
+                ./images/hero/d-hero-icecream-2x.png 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="
+                ./images/hero/t-hero-icecream-1x.png 1x,
+                ./images/hero/t-hero-icecream-2x.png 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./images/hero/m-hero-icecream-1x.png 1x,
+                ./images/hero/m-hero-icecream-2x.png 2x
+              "
+              media="(min-width:320px)"
+            />
+            <img src="./images/hero/d-hero-icecream-2x.png" alt="ice-cream" />
+          </picture>
 
           <div class="hero__content-top">
             <div class="hero__content-left">
@@ -126,11 +134,13 @@
                 </li>
               </ul>
             </div>
+
             <ul class="hero__quantity-list list">
               <li class="hero__quantity-item">
                 <p class="hero__quantity-number">16</p>
                 <p class="hero__quantity-text">cafes</p>
               </li>
+
               <li class="hero__quantity-item">
                 <p class="hero__quantity-number">23</p>
                 <p class="hero__quantity-text">food trucks</p>
@@ -156,6 +166,7 @@
               />
               <img src="./images/hero/d-hero-milk-2x.png" alt="milk" />
             </picture>
+
             <div class="text-wraper">
               <p class="hero__content-bottom--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

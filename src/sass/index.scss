@@ -4,12 +4,19 @@
 @import './components/section-container';
 @import './components/section';
 
-@import './layers/footer';
+
 
 @import './common';
+
+@import './example';
+
+
+
 // @import './example';
 
 @import './components/menu';
 @import './components/header';
 @import './components/hero';
 @import './components/modal';
+@import './layout/gallery';
+@import './layers/footer';

@@ -1,0 +1,34 @@
+.gallery {
+  margin: 0 auto;
+  background-color: #fff5f6;
+}
+
+.container {
+  width: 1200px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  columns: 6;
+  gap: 15px;
+}
+
+.masonry {
+  border: 1px solid transparent;
+  align-content: center;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  transform: scale(1) translate(0, 0);
+  transition: all 1s;
+}
+
+.masonry img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.masonry:hover,
+.masonry:focus {
+  transform: scale(1.2) translate(-15px, -30px);
+}

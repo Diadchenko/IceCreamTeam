@@ -1,9 +1,9 @@
-<header class="header">
+<header class="header" id="home">
   <div class="containers container-position">
     <div class="circle"></div>
 
     <nav class="header__nav">
-      <a href="logo">
+      <a href="#home">
         <picture>
           <source
             srcset="./images/hero/logo.png 1x, ./images/hero/logo-2x.png 2x"
@@ -16,19 +16,19 @@
       <div class="main-nav">
         <ul class="main-nav__list list">
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="">Home</a>
+            <a class="main-nav__link link" href="#home">Home</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="">About us</a>
+            <a class="main-nav__link link" href="#advantages">About us</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="">How it’s made?</a>
+            <a class="main-nav__link link" href="#about">How it’s made?</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="">Our products</a>
+            <a class="main-nav__link link" href="#products">Our products</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="">Contact</a>
+            <a class="main-nav__link link" href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -43,19 +43,19 @@
         <button data-modal-open class="menu__btn" type="button">Buy now</button>
         <ul class="menu__list list">
           <li class="menu__item">
-            <a class="menu__link link" href="">Home</a>
+            <a class="menu__link link" href="#home">Home</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link link" href="">About us</a>
+            <a class="menu__link link" href="#advantages">About us</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link link" href="">How it’s made?</a>
+            <a class="menu__link link" href="#about">How it’s made?</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link link" href="">Our products</a>
+            <a class="menu__link link" href="#products">Our products</a>
           </li>
 
           <li class="menu__item">
@@ -110,12 +110,12 @@
           </h1>
           <ul class="hero__button-list list">
             <li class="hero__button-item">
-              <a class="hero__button hero__button-accent link" href=""
+              <a class="hero__button hero__button-accent link" href="#products"
                 >Products</a
               >
             </li>
             <li class="hero__button-item">
-              <a class="hero__button link" href="">How it’s made?</a>
+              <a class="hero__button link" href="#about">How it’s made?</a>
             </li>
           </ul>
         </div>
@@ -203,8 +203,10 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+
       <form class="form">
         <h2 class="form__title">order form</h2>
+
         <label class="label">
           <span class="label__name"> Name</span>
           <input
@@ -214,14 +216,17 @@
             class="label__input"
           />
         </label>
+
         <label class="label">
           <span class="label__name">Phone</span>
           <input type="tel" name="tel" required="" class="label__input" />
         </label>
+
         <label class="label">
           <span class="label__name">Email</span>
           <input type="email" name="email" required="" class="label__input" />
         </label>
+
         <label class="textarea">
           <span class="label__name">Comments</span>
           <textarea
@@ -231,23 +236,7 @@
             placeholder="write the text"
           ></textarea>
         </label>
-        <!-- <label class="checkbox">
-          <input
-            type="checkbox"
-            name="checkbox"
-            value="checkbox"
-            class="checkbox__input visually-hidden"
-          />
-          <span class="checkbox__box">
-            <svg class="checkbox__icon" width="16" height="15">
-              <use href="./images/icons.svg#icon-check"></use>
-            </svg>
-          </span>
-          <span class="checkbox__text"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="" class="checkbox__link">Условия договора </a>
-          </span>
-        </label> -->
+
         <button type="submit" class="form__btn">send</button>
       </form>
     </div>

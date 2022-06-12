@@ -1,34 +1,71 @@
 .gallery {
+  background-image: linear-gradient(to bottom, #fff5f6 45%, #ffffff 45%);
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: 0 auto;
-  background-color: #fff5f6;
+}
+
+.gallery__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  color: #d41443;
 }
 
 .container {
-  width: 1200px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  max-width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
   margin: 0 auto;
   columns: 6;
-  gap: 15px;
+  gap: 2px;
+  @include tablet {
+    gap: 5px;
+  }
+  @include desktop {
+    gap: 10px;
+  }
 }
 
-.masonry {
-  border: 1px solid transparent;
-  align-content: center;
-  margin-bottom: 10px;
+.gallery__item {
+  align-content: baseline;
+  margin-bottom: 2px;
+  @include tablet {
+    margin-bottom: 5px;
+  }
+  @include desktop {
+    margin-bottom: 10px;
+  }
   break-inside: avoid;
   transform: scale(1) translate(0, 0);
   transition: all 1s;
 }
 
-.masonry img {
+.gallery__item img {
   width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 15px;
+  border-radius: 10px;
+  @include tablet {
+    border-radius: 15px;
+  }
+  @include desktop {
+    border-radius: 25px;
+  }
 }
 
-.masonry:hover,
-.masonry:focus {
-  transform: scale(1.2) translate(-15px, -30px);
+.gallery__item:hover,
+.gallery__item:focus {
+  transform: scale(1.2) translate(-20px, -30px);
 }

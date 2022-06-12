@@ -1,7 +1,11 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+// @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
   font-family: 'DM Sans', sans-serif;
+}
+
+body.no-scroll {
+  overflow-y: hidden;
 }
 
 .link {

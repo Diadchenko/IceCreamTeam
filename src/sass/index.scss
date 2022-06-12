@@ -1,9 +1,32 @@
 @import './utils/mixin';
 @import './utils/visually';
 @import './reset';
-@import './components/container';
+@import './components/section-container';
 @import './components/section';
 @import './components/about';
 
+
+
 @import './common';
+
 @import './example';
+
+
+
+// @import './example';
+
+@import './components/menu';
+@import './components/header';
+@import './components/hero';
+@import './components/modal';
+
+
+@import './layers/products';
+@import './components/advantages';
+@import './layout/gallery';
+@import './layers/footer';
+
+
+
+
+

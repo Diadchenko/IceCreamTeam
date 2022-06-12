@@ -1,0 +1,219 @@
+@media screen and (min-width: 320px) {
+    
+    .advantages {
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        background-color: #FFF5F6;
+       
+    }
+
+    .advantages__item {
+        margin-bottom: 32px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+    .advantages__item-name {
+        margin-bottom: 25px;
+
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.14;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #D41443;
+
+                
+        }
+
+
+            .bucket-pic::before {
+                content: "";
+                display: block;
+                max-width: 33px;
+                height: 50px;
+                margin-bottom: 16px;
+    
+                background-image: url(../images/advantages/opt/advantages-icon-1-1x-min.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .apple-pic::before {
+                content: "";
+                display: block;
+                max-width: 50px;
+                height: 50px;
+                margin-bottom: 16px;
+    
+                background-image: url(../images/advantages/opt/advantages-icon-2-1x-min.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .heart-pic::before {
+                content: "";
+                display: block;
+                max-width: 44px;
+                height: 50px;
+                margin-bottom: 16px;
+    
+                background-image: url(../images/advantages/opt/advantages-icon-3-1x-min.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution:2dppx) {
+                .bucket-pic::before {
+                    background-image: url(../images/advantages/opt/advantages-icon-1-2x-min.png);
+                }
+
+                .apple-pic::before {
+                    background-image: url(../images/advantages/opt/advantages-icon-2-2x-min.png);
+                }
+
+                .heart-pic::before {
+                    background-image: url(../images/advantages/opt/advantages-icon-3-2x-min.png);
+
+                    }
+                }
+            
+
+
+    .advantages__item-descr {
+
+
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.7;
+       
+        color: #000000;
+
+             }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .advantages {
+        padding-top: 40px;
+        padding-bottom: 42px;
+
+}
+
+    .advantages__item {
+        margin-bottom: 0;
+
+        &:first-child {
+            margin-right: 4px;
+            max-width: 180px;
+            height: auto;
+        }
+
+        &:nth-child(2n) {
+            margin-right: 22px;
+            max-width: 162px;
+            height: auto;
+        }
+
+        &:last-child {
+            
+            max-width: 159px;
+            height: auto;
+        }
+    }
+
+    .advantages__item-name {
+        margin-bottom: 13px;
+
+        font-size: 48px;
+        line-height: 1.15;
+
+    }
+
+    .advantages__item-descr {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .bucket-pic::before,
+    .apple-pic::before,
+    .heart-pic::before {
+        margin-bottom:36px;
+    }
+
+    .advantages__list {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+
+
+}
+
+
+
+@media screen and (min-width: 1280px) {
+
+    .advantages {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .advantages__item {
+        margin-bottom: 0;
+
+        &:first-child {
+            margin-right: 142px;
+            max-width: 288px;
+            height: auto;
+        }
+
+        &:nth-child(2n) {
+            margin-right: 106px;
+            max-width: 317px;
+            height: auto;
+        }
+
+        &:last-child {
+            
+            max-width: 288px;
+            height: auto;
+        }
+    }
+
+    .advantages__item-name {
+        margin-bottom: 13px;
+
+        font-size: 58px;
+        line-height: 1.14;
+
+    }
+
+    .advantages__item-descr {
+        font-size: 16px;
+        line-height: 1.76;
+    }
+
+    .bucket-pic::before,
+    .apple-pic::before,
+    .heart-pic::before {
+        margin-bottom: 40px;
+    }
+}

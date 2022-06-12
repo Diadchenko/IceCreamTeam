@@ -1,0 +1,312 @@
+h1,
+h2,
+h3,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.products-section {    
+    margin: 0 auto;
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-top: 80px;
+
+    @media screen and (min-width: 768px) {
+        min-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 60px;
+        padding-top: 40px;
+        
+    }
+
+    @media screen and (min-width: 1280px) {
+        min-width: 1280px;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 60px;
+        padding-top: 60px;
+
+    }
+
+}
+
+.products-label {
+    display: block;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FFA5BA;
+
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
+        font-size: 26px;
+        line-height: 1.13;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 18px;
+        font-size: 30px;
+        line-height: 1.17;
+    }
+}
+
+.products-header {
+    display: block;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #D41443;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        line-height: 1.32;
+    }
+}
+
+.produts__list {
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 154px;
+        }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 261px;
+    }
+}
+
+.product__card {
+    position: relative;
+    max-width: auto;
+    padding: 160px 40px 40px 40px;
+    border-radius: 24px;
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        padding: 118px 32px 40px 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 395px;
+        padding: 269px 75px 60px 75px;
+    }
+}
+
+.ice-cream {
+    margin-top: 148px;
+    background: #FFB8CA;
+
+    @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+
+    &::before {
+        content: url(../images/products/mobile/ice-cream-280.png);
+        position: absolute;
+        max-width: 280px;
+        min-height: 280px;
+        top: -140px;
+        left: 0;
+
+        @media screen and (min-width: 768px) {
+            content: url(../images/products/tablet/ice-cream-224.png);
+                max-width: 224px;
+                min-height: 224px;
+                top: -134px;
+                left: 0;
+        }
+
+        @media screen and (min-width: 1280px) {
+            content: url(../images/products/desktop/ice-cream-394.png);
+            max-width: 394px;
+            min-height: 394px;
+            top: -197px;
+            left: 0;
+        }
+    }
+
+    
+}
+
+.ice-coffee {
+    margin-top: 140px;
+    background: #F0D1A5;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
+
+    &::before {
+        content: url(../images/products/mobile/ice-coffee-280.png);
+        position: absolute;
+        max-width: 280px;
+        min-height: 280px;
+        top: -140px;
+        left: 0;
+
+        @media screen and (min-width: 768px) {
+            content: url(../images/products/tablet/ice-coffee-224.png);
+            max-width: 224px;
+            min-height: 224px;
+            top: -134px;
+            left: 0;
+            }
+
+        @media screen and (min-width: 1280px) {
+            content: url(../images/products/desktop/ice-coffee-394.png);
+            max-width: 394px;
+            min-height: 394px;
+            top: -197px;
+            left: 0;
+        }
+    }
+}
+
+.milkshakes {
+    margin-top: 140px;
+    background: #C2E297;
+
+    @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+
+    &::before {
+            content: url(../images/products/mobile/milkshakes-280.png);
+            position: absolute;
+            max-width: 280px;
+            min-height: 280px;
+            top: -140px;
+            left: 0;
+
+            @media screen and (min-width: 768px) {
+                    content: url(../images/products/tablet/milkshakes-224.png);
+                    position: absolute;
+                    max-width: 224px;
+                    min-height: 224px;
+                    top: -134px;
+                    left: 0;
+                }
+
+            @media screen and (min-width: 1280px) {
+                content: url(../images/products/desktop/milkshakes-394.png);
+                position: absolute;
+                max-width: 394px;
+                min-height: 394px;
+                top: -197px;
+                left: 0;
+            }
+        }
+}
+
+.product__name {
+    position: relative;
+    display: block;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    width: auto;
+
+    color: #FFFFFF;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 30px;
+        line-height: 1.15;
+    }
+
+    &::after {
+        content: url(../images/products/dots.svg);
+        position: absolute;
+        top: 32px;
+        right: 87px;
+
+        @media screen and (min-width: 768px) {
+            top: 32px;
+            right: 67px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            right: 111px;
+        }
+    }
+}
+
+.product__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+    width: auto;
+
+    color: #FFFFFF;
+
+    @media screen and (min-width: 768px) {
+        line-height: 1.76;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+    }
+
+}
+
+.product-info__bnt {
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    background-image: url(../images/products/arrow-right.svg);
+
+    &:focus,
+    &:hover {
+        cursor: pointer;
+
+    }
+}

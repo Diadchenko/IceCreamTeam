@@ -1,8 +1,5 @@
 .gallery {
   background-image: linear-gradient(to bottom, #fff5f6 45%, #ffffff 45%);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0 auto;
 }
 
 .gallery__title {
@@ -20,18 +17,12 @@
 }
 
 .container {
-  max-width: 100%;
-  height: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
   width: 1280px;
   margin: 0 auto;
   columns: 6;
-  gap: 2px;
+  gap: 5px;
   @include tablet {
-    gap: 5px;
+    gap: 10px;
   }
   @include desktop {
     gap: 10px;
@@ -40,9 +31,9 @@
 
 .gallery__item {
   align-content: baseline;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   @include tablet {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   @include desktop {
     margin-bottom: 10px;

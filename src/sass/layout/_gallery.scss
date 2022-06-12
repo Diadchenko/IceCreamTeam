@@ -52,6 +52,11 @@
   break-inside: avoid;
   transform: scale(1) translate(0, 0);
   transition: all 1s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2) translate(-20px, -30px);
+  }
 }
 
 .gallery__item img {
@@ -65,9 +70,4 @@
   @include desktop {
     border-radius: 25px;
   }
-}
-
-.gallery__item:hover,
-.gallery__item:focus {
-  transform: scale(1.2) translate(-20px, -30px);
 }

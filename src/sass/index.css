@@ -1024,6 +1024,11 @@ body.no-scroll {
   }
 }
 
+.gallery__item:hover, .gallery__item:focus {
+  -webkit-transform: scale(1.2) translate(-20px, -30px);
+          transform: scale(1.2) translate(-20px, -30px);
+}
+
 .gallery__item img {
   width: 100%;
   height: auto;
@@ -1042,12 +1047,6 @@ body.no-scroll {
   .gallery__item img {
     border-radius: 25px;
   }
-}
-
-.gallery__item:hover,
-.gallery__item:focus {
-  -webkit-transform: scale(1.2) translate(-20px, -30px);
-          transform: scale(1.2) translate(-20px, -30px);
 }
 
 .page-footer {

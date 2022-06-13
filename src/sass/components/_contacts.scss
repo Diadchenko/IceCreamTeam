@@ -1,17 +1,17 @@
 .section-contacts {
   background-color: #fff5f6;
-  padding-top: 0;
-  padding-bottom: 20px;
+  // padding-top: 0;
+  // padding-bottom: 20px;
   width: 100%;
   margin: 0 auto;
-  @media screen and (min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 40px;
+  //   padding-bottom: 40px;
+  // }
+  // @media screen and (min-width: 1280px) {
+  //   padding-top: 60px;
+  //   padding-bottom: 60px;
+  // }
 }
 .contact-list {
   display: flex;
@@ -191,24 +191,32 @@
 .btn-location {
   background-color: #d41342;
   border-radius: 22px;
-  padding: 19px 17px;
+  // padding: 19px 17px;
   border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   color: #ffffff;
   cursor: pointer;
+
+  width: 198px;
+  height: 44px;
 }
 .button-franchise {
   background-color: #ffffff;
   border-radius: 22px;
-  padding: 19px 17px;
+  // padding: 19px 17px;
   border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   color: #d41443;
   cursor: pointer;
+
+  width: 180px;
+  height: 44px;
+  padding-left: 25px;
+  padding-right: 20px;
 }
 .btn-wrap {
   display: flex;

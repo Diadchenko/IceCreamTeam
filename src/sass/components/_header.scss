@@ -7,7 +7,6 @@
   @media screen and (min-width: 768px) {
     height: 416px;
     padding-top: 32px;
-    margin-bottom: 20px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -30,6 +29,12 @@
   background-color: #ffa5ba;
   border-radius: 50%;
 
+  animation-name: circles;
+  animation-duration: 1800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0, -0.01, 1, 0.99);
+  animation-delay: 2000ms;
+
   @media screen and (min-width: 768px) {
     width: 335px;
     height: 333px;
@@ -42,6 +47,29 @@
     height: 534px;
     bottom: 76px;
     left: 517px;
+  }
+}
+
+@keyframes circles {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(0.85);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 

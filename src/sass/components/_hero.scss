@@ -234,3 +234,17 @@
     right: 16px;
   }
 }
+
+.pictere-milk {
+  animation: milkRotate 3000ms infinite alternate backwards ease-in-out 2000ms;
+}
+
+@keyframes milkRotate {
+  0% {
+    transform: perspective(400px) rotateY(20deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(-20deg);
+  }
+}

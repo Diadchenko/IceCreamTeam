@@ -4,6 +4,14 @@
   padding-bottom: 20px;
   width: 100%;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .contact-list {
   display: flex;

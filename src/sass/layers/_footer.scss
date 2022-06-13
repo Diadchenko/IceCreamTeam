@@ -175,3 +175,9 @@
     padding-bottom: 8px;
   }
 }
+
+.footer-copyright__first {
+  @media screen and (min-width: 768px) {
+    margin-right: 6px;
+  }
+}

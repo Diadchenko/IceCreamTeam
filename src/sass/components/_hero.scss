@@ -39,9 +39,9 @@
 }
 
 .hero__button-list {
-  display: none;
+  // display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1280px) {
     display: flex;
     align-items: center;
   }
@@ -235,7 +235,7 @@
   }
 }
 
-.pictere-milk {
+.picture-milk {
   animation: milkRotate 3000ms infinite alternate backwards ease-in-out 2000ms;
 }
 
@@ -247,4 +247,14 @@
   100% {
     transform: perspective(400px) rotateY(-20deg);
   }
+}
+
+.milk-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.milk-btn.is-click {
+  display: flex;
 }

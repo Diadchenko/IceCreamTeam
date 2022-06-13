@@ -97,7 +97,7 @@
             ./images/hero/m-hero-icecream-1x.png 1x,
             ./images/hero/m-hero-icecream-2x.png 2x
           "
-          media="(min-width:320px)"
+          media="(max-width:767px)"
         />
         <img src="./images/hero/d-hero-icecream-2x.png" alt="ice-cream" />
       </picture>
@@ -134,7 +134,7 @@
       </div>
 
       <div class="hero__content-bottom">
-        <picture class="pictere-milk">
+        <picture class="picture-milk">
           <source
             srcset="
               ./images/hero/d-hero-milk-1x.png 1x,
@@ -157,23 +157,25 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <picture>
-            <source
-              srcset="
-                ./images/hero/d-arrow-right.png    1x,
-                ./images/hero/d-arrow-right-2x.png 2x
-              "
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/hero/t-arrow-right.png    1x,
-                ./images/hero/t-arrow-right-2x.png 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <img src="./images/hero/d-arrow-right-2x.png" alt="arrow-right" />
-          </picture>
+          <button type="button" class="milk-btn">
+            <picture>
+              <source
+                srcset="
+                  ./images/hero/d-arrow-right.png    1x,
+                  ./images/hero/d-arrow-right-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/hero/t-arrow-right.png    1x,
+                  ./images/hero/t-arrow-right-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img src="./images/hero/d-arrow-right-2x.png" alt="arrow-right" />
+            </picture>
+          </button>
         </div>
       </div>
 

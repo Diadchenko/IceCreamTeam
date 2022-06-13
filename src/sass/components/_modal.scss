@@ -24,6 +24,8 @@
   background-color: #ffb8ca;
   width: 300px;
   height: 650px;
+  max-height: 100%;
+  overflow: auto;
   border-radius: 20px;
 
   @media screen and (min-width: 768px) {

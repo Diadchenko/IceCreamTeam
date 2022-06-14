@@ -117,8 +117,8 @@
 }
 
 .menu__backdrop {
-  position: absolute;
-  z-index: 200;
+  position: fixed;
+  z-index: 201;
   top: 0;
   left: 0;
   width: 100%;
@@ -126,12 +126,10 @@
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
 
-.menu__backdrop.is-open {
-  transform: translate(0);
-}
+// .menu__backdrop.is-close {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }

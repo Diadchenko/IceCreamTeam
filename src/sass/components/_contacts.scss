@@ -13,6 +13,9 @@
   //   padding-bottom: 60px;
   // }
 }
+.contacts {
+  background-image: linear-gradient(to bottom, #ffffff 20%, #fff5f6 20%);
+}
 .contact-list {
   display: flex;
   flex-direction: column;
@@ -127,7 +130,7 @@
   content: '';
   width: 100%;
   height: 0px;
-  border: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -173,7 +176,7 @@
   content: '';
   width: 100%;
   height: 0px;
-  border: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -189,6 +192,8 @@
 }
 
 .btn-location {
+  width: 161px;
+  height: 44px;
   background-color: #d41342;
   border-radius: 22px;
   // padding: 19px 17px;
@@ -198,11 +203,18 @@
   line-height: 1.31;
   color: #ffffff;
   cursor: pointer;
-
-  width: 198px;
-  height: 44px;
+  padding-left: 25px;
+  padding-right: 20px;
+  @media screen and (min-width: 768px) {
+    width: 191px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+  }
 }
 .button-franchise {
+  width: 161px;
+  height: 44px;
   background-color: #ffffff;
   border-radius: 22px;
   // padding: 19px 17px;
@@ -212,11 +224,14 @@
   line-height: 1.31;
   color: #d41443;
   cursor: pointer;
-
-  width: 180px;
-  height: 44px;
   padding-left: 25px;
   padding-right: 20px;
+  @media screen and (min-width: 768px) {
+    width: 174px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+  }
 }
 .btn-wrap {
   display: flex;

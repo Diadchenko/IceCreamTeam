@@ -11,6 +11,30 @@
   }
   background-color: #fff5f6;
 }
+.container {
+    max-width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+   
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+   
+  }
+}
+
+
 .about-label {
   font-family: 'Titan One';
   font-weight: 700;
@@ -73,9 +97,7 @@
     }
   }
 }
-.about-image {
-  width: 100%;
-}
+
 .about-text-background {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     background-image: url(../images/made/m-made-background-1x.png);
@@ -102,8 +124,6 @@
     margin-right: 80px;
     margin-left: 20px;
   }
-  // margin-right: 80px;
-  //margin-left: 20px;
   width: 220px;
   @media screen and (min-width: 768px) {
     width: 334px;
@@ -137,8 +157,6 @@
     margin-right: 80px;
     margin-left: 20px;
   }
-  //margin-right: 80px;
-  //margin-left: 20px;
   width: 220px;
   @media screen and (min-width: 768px) {
     width: 334px;
@@ -226,8 +244,13 @@
 }
 
 .about-details {
+   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 80px;
-  margin-left: 10px;
+   @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-left: 10px;
+  }
   margin-bottom: 20px;
   width: 220px;
   @media screen and (min-width: 768px) {

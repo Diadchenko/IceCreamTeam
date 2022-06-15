@@ -35,7 +35,7 @@
   }
 })();
 
-const anchors = document.querySelectorAll('header a[href*="#"]');
+const anchors = document.querySelectorAll('a[href*="#"]');
 for (anchor of anchors) {
   if (anchor) {
     anchor.addEventListener('click', function (e) {

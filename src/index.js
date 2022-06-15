@@ -23,7 +23,6 @@
     openHeaderBtn: document.querySelector('.header__btn'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
-    body: document.querySelector('body'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -35,3 +34,18 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
+const anchors = document.querySelectorAll('header a[href*="#"]');
+for (anchor of anchors) {
+  if (anchor) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      anchorID = this.getAttribute('href');
+      // console.log(anchorID);
+      document.querySelector(anchorID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+}
